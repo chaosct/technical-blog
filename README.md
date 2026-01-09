@@ -5,9 +5,9 @@ crear la versio en angles, i publicar-los a dev.to i a GitHub Pages.
 
 ## Estructura
 
-- `content/ca/`: fonts en catala (amb front matter per dev.to).
-- `content/en/`: traduccions en angles (amb front matter per dev.to).
-- `docs/`: sortida per a GitHub Pages (renderitzada des de `content/`).
+- `content/ca/`: fonts en catala (amb front matter).
+- `content/en/`: traduccions en angles (amb front matter).
+- `output/`: lloc web generat per Pelican (per a GitHub Pages).
 - `exports/devto/`: fitxers preparats per pujar a dev.to.
 - `scripts/`: utilitats en Python.
 - `templates/`: plantilles d'article.
@@ -28,15 +28,9 @@ uv run scripts/new_article.py --lang ca --slug el-meu-article --title "El meu ar
 uv run scripts/prepare_translation.py --slug el-meu-article
 ```
 
-Segueix `TRANSLATION.md` per fer la traduccio amb un agent (ex: Codex).
+Segueix `TRANSLATION.md` per fer la traduccio amb un agent.
 
-4. Renderitzar per a GitHub Pages:
-
-```
-uv run scripts/render_docs.py
-```
-
-5. Exportar per a dev.to:
+4. Exportar per a dev.to:
 
 ```
 uv run scripts/export_devto.py
@@ -47,7 +41,7 @@ uv run scripts/export_devto.py
 - `pre-commit`: hooks de format i lint.
 - `ruff`: lint per a scripts.
 - `mdformat`: format Markdown.
-- `mkdocs` + `mkdocs-material`: site per a GitHub Pages.
+- `pelican`: generador de llocs estatics per al blog.
 
 Instal.lacio suggerida:
 
@@ -58,18 +52,18 @@ uvx pre-commit install
 
 ## GitHub Pages
 
-Edita `mkdocs.yml` i actualitza `site_url` amb la teva URL real.
+Edita `pelicanconf.py` i actualitza `SITENAME` i altres configuracions.
 
 Per construir el site:
 
 ```
-uv run mkdocs build
+uv run pelican content
 ```
 
 Per servir-lo localment:
 
 ```
-uv run mkdocs serve
+uv run pelican --listen
 ```
 
 ## Nox

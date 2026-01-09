@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+from datetime import datetime
 from pathlib import Path
 
 TEMPLATES = {
@@ -12,7 +13,12 @@ TEMPLATES = {
 
 def render_template(template_path: Path, title: str, description: str) -> str:
     text = template_path.read_text(encoding="utf-8")
-    return text.replace("{{TITLE}}", title).replace("{{DESCRIPTION}}", description)
+    now = datetime.now().strftime("%Y-%m-%d %H:%M")
+    return (
+        text.replace("{{TITLE}}", title)
+        .replace("{{DESCRIPTION}}", description)
+        .replace("{{DATE}}", now)
+    )
 
 
 def main() -> int:

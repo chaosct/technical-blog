@@ -1,7 +1,8 @@
 ---
-title: Welcome to the articles repo
+title: Welcome to the article repository
+date: 2026-01-09 16:57
 published: false
-description: Bootstrap article for the technical writing repo.
+description: Bootstrap of the technical articles repository.
 tags: [meta, writing, devto]
 ---
 

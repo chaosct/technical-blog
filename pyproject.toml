@@ -3,8 +3,8 @@ name = "technical-blog"
 version = "0.1.0"
 description = "Technical blog"
 dependencies = [
-    "mkdocs>=1.5",
-    "mkdocs-material>=9.5",
+    "pelican[markdown]>=4.11",
+    "markdown>=3.7",
 ]
 requires-python = ">=3.13"
 

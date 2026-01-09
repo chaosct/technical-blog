@@ -23,13 +23,11 @@ jobs:
         uses: astral-sh/setup-uv@v7
       - name: Install dependencies
         run: uv sync
-      - name: Render docs
-        run: uv run scripts/render_docs.py
       - name: Build site
-        run: uv run mkdocs build --site-dir site
+        run: uv run pelican content -o output -s pelicanconf.py
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: output
 
   deploy:
     needs: build

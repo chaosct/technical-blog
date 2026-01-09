@@ -13,7 +13,6 @@ def format(session: nox.Session) -> None:
     session.run(
         "mdformat",
         "README.md",
-        "docs",
         "content",
         "templates",
         "TRANSLATION.md",
@@ -23,11 +22,9 @@ def format(session: nox.Session) -> None:
 
 @nox.session
 def docs(session: nox.Session) -> None:
-    session.install("-r", "requirements.txt")
-    session.run("mkdocs", "build")
+    session.run("pelican", "content")
 
 
 @nox.session
 def serve(session: nox.Session) -> None:
-    session.install("-r", "requirements.txt")
-    session.run("mkdocs", "serve", "-a", "127.0.0.1:8000")
+    session.run("pelican", "--listen")

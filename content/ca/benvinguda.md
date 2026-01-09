@@ -1,5 +1,6 @@
 ---
 title: Benvinguda al repositori d'articles
+date: 2026-01-09 16:57
 published: false
 description: Arrencada del repositori d'articles tecnics.
 tags: [meta, escriptura, devto]
