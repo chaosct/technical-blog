@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-AUTHOR = "Technical Blog Author"
-SITENAME = "Articles Tecnics"
+AUTHOR = "Carles Julià"
+SITENAME = "Escric coses"
 SITEURL = ""
 
 PATH = "content"
@@ -18,16 +18,18 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (
-    ("Pelican", "https://getpelican.com/"),
-    ("Python.org", "https://python.org/"),
-    ("Jinja2", "https://jinja.org/"),
-)
+# LINKS = (
+#     ("Pelican", "https://getpelican.com/"),
+#     ("Python.org", "https://python.org/"),
+#     ("Jinja2", "https://jinja.org/"),
+# )
+LINKS = ()
 
 # Social widget
 SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
+    ("GitHub", "https://github.com/chaosct"),
+    ("X", "https://x.com/chaosct"),
+    ("LinkedIn", "https://www.linkedin.com/in/carles-juli%C3%A0-ph-d-b0bb5141/"),
 )
 
 DEFAULT_PAGINATION = 10
