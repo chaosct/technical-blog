@@ -1,0 +1,24 @@
+site_name: Articles Tecnics
+site_url: https://example.github.io/articles
+repo_name: articles
+repo_url: https://github.com/example/articles
+
+theme:
+  name: material
+  language: ca
+  palette:
+    - scheme: default
+      primary: teal
+      accent: amber
+
+nav:
+  - Inici: index.md
+  - Catala:
+      - Inici: ca/index.md
+  - English:
+      - Home: en/index.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - footnotes

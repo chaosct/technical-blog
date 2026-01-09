@@ -1,0 +1,14 @@
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["scripts"]
+
+[tool.mdformat]
+number = true
+wrap = 88
+end-of-line = "lf"

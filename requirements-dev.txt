@@ -1,0 +1,6 @@
+mdformat>=0.7
+mdformat-frontmatter>=0.4
+mdformat-gfm>=0.3
+nox>=2024.3
+pre-commit>=3.7
+ruff>=0.4
