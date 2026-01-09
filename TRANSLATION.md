@@ -8,7 +8,7 @@ Goal: keep Catalan as the source of truth in `content/ca/` and produce English i
 1. Generate a stub in English:
 
 ```
-python scripts/prepare_translation.py --slug <slug>
+uv run scripts/prepare_translation.py --slug <slug>
 ```
 
 2. Ask Codex to translate the body. Example prompt:
@@ -26,6 +26,6 @@ front matter but translate title/description and tags if needed.
 1. Run:
 
 ```
-python scripts/render_docs.py
-python scripts/export_devto.py
+uv run scripts/render_docs.py
+uv run scripts/export_devto.py
 ```

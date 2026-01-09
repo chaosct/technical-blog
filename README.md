@@ -17,7 +17,7 @@ crear la versio en angles, i publicar-los a dev.to i a GitHub Pages.
 1. Crear un article nou:
 
 ```
-python scripts/new_article.py --lang ca --slug el-meu-article --title "El meu article"
+uv run scripts/new_article.py --lang ca --slug el-meu-article --title "El meu article"
 ```
 
 2. Escriure l'article a `content/ca/el-meu-article.md`.
@@ -25,7 +25,7 @@ python scripts/new_article.py --lang ca --slug el-meu-article --title "El meu ar
 1. Generar la versio anglesa (manual + assistent):
 
 ```
-python scripts/prepare_translation.py --slug el-meu-article
+uv run scripts/prepare_translation.py --slug el-meu-article
 ```
 
 Segueix `TRANSLATION.md` per fer la traduccio amb un agent (ex: Codex).
@@ -33,13 +33,13 @@ Segueix `TRANSLATION.md` per fer la traduccio amb un agent (ex: Codex).
 4. Renderitzar per a GitHub Pages:
 
 ```
-python scripts/render_docs.py
+uv run scripts/render_docs.py
 ```
 
 5. Exportar per a dev.to:
 
 ```
-python scripts/export_devto.py
+uv run scripts/export_devto.py
 ```
 
 ## Tooling (Python)
@@ -52,10 +52,8 @@ python scripts/export_devto.py
 Instal.lacio suggerida:
 
 ```
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt -r requirements-dev.txt
-pre-commit install
+uv sync
+uvx pre-commit install
 ```
 
 ## GitHub Pages
@@ -65,19 +63,19 @@ Edita `mkdocs.yml` i actualitza `site_url` amb la teva URL real.
 Per construir el site:
 
 ```
-mkdocs build
+uv run mkdocs build
 ```
 
 Per servir-lo localment:
 
 ```
-mkdocs serve
+uv run mkdocs serve
 ```
 
 ## Nox
 
 ```
-python -m nox -s lint
-python -m nox -s format
-python -m nox -s docs
+uv run nox -s lint
+uv run nox -s format
+uv run nox -s docs
 ```

@@ -15,15 +15,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: "Set up Python"
+        uses: actions/setup-python@v6
         with:
-          python-version: "3.11"
+          python-version-file: "pyproject.toml"
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: uv sync
       - name: Render docs
-        run: python scripts/render_docs.py
+        run: uv run scripts/render_docs.py
       - name: Build site
-        run: mkdocs build --site-dir site
+        run: uv run mkdocs build --site-dir site
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
