@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Escric coses</title><link href="/" rel="alternate"/><link href="/feeds/all-en.atom.xml" rel="self"/><id>/</id><updated>2026-01-09T16:57:00+00:00</updated><entry><title>Welcome</title><link href="/benvinguda-en.html" rel="alternate"/><published>2026-01-09T16:57:00+00:00</published><updated>2026-01-09T16:57:00+00:00</updated><author><name>Carles Julià</name></author><id>tag:None,2026-01-09:/benvinguda-en.html</id><summary type="html">&lt;h1&gt;Welcome&lt;/h1&gt;
+&lt;p&gt;Sometimes I feel like explaining things, interesting things, but I never find the time or know where to put them so they reach someone.&lt;/p&gt;
+&lt;p&gt;After reading Hacker News regularly for months, the superiority of blogs for explaining the kind of things I want to explain is clear to me …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Welcome&lt;/h1&gt;
+&lt;p&gt;Sometimes I feel like explaining things, interesting things, but I never find the time or know where to put them so they reach someone.&lt;/p&gt;
+&lt;p&gt;After reading Hacker News regularly for months, the superiority of blogs for explaining the kind of things I want to explain is clear to me. So I'll set up this blog as a hub and replicate the articles to other more closed outlets.&lt;/p&gt;
+&lt;p&gt;This is also my effort to ensure that high-quality, deep, and technical content exists in Catalan.&lt;/p&gt;
+&lt;p&gt;I hope I don't get stuck in the implementation of the blog. We'll see.&lt;/p&gt;</content><category term="en"/><category term="[meta"/><category term="writing"/><category term="devto]"/></entry></feed>

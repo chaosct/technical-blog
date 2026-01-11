@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Escric coses</title><link href="/" rel="alternate"/><link href="/feeds/all-ca.atom.xml" rel="self"/><id>/</id><updated>2026-01-09T16:57:00+00:00</updated><entry><title>Benvinguda</title><link href="/A/ca/benvinguda/" rel="alternate"/><published>2026-01-09T16:57:00+00:00</published><updated>2026-01-09T16:57:00+00:00</updated><author><name>Carles Julià</name></author><id>tag:None,2026-01-09:/A/ca/benvinguda/</id><summary type="html">&lt;h1&gt;Benvinguda&lt;/h1&gt;
+&lt;p&gt;A vegades tinc ganes d'explicar coses, coses interessants, però mai trobo el temps ni sé on posar-les perquè arribi a algú.&lt;/p&gt;
+&lt;p&gt;Després de llegir Hacker News de forma regular durant mesos, em queda clara la superioritat dels blogs per a explicar el tipus de coses que vull explicar. Així …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Benvinguda&lt;/h1&gt;
+&lt;p&gt;A vegades tinc ganes d'explicar coses, coses interessants, però mai trobo el temps ni sé on posar-les perquè arribi a algú.&lt;/p&gt;
+&lt;p&gt;Després de llegir Hacker News de forma regular durant mesos, em queda clara la superioritat dels blogs per a explicar el tipus de coses que vull explicar. Així que muntaré aquest blog com a nucli i replicaré
+els articles a altres outlets més tancats.&lt;/p&gt;
+&lt;p&gt;Aquest és també el meu esforç perquè existeixi contingut de qualitat, profund i tècnic, en català.&lt;/p&gt;
+&lt;p&gt;Espero no quedar-me atrapat en la implementació del blog. Anem veient.&lt;/p&gt;</content><category term="ca"/><category term="[meta"/><category term="escriptura"/><category term="devto]"/></entry></feed>
