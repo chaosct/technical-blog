@@ -35,7 +35,7 @@ def main() -> int:
     if not template_path.exists():
         raise SystemExit(f"Missing template: {template_path}")
 
-    output_dir = Path("content") / args.lang
+    output_dir = Path("content") / args.lang / "blog"
     output_dir.mkdir(parents=True, exist_ok=True)
     output_path = output_dir / f"{args.slug}.md"
 

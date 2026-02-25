@@ -25,11 +25,11 @@ def main() -> int:
     parser.add_argument("--to-lang", default="en")
     args = parser.parse_args()
 
-    source_path = Path("content") / args.from_lang / f"{args.slug}.md"
+    source_path = Path("content") / args.from_lang / "blog" / f"{args.slug}.md"
     if not source_path.exists():
         raise SystemExit(f"Missing source: {source_path}")
 
-    target_path = Path("content") / args.to_lang / f"{args.slug}.md"
+    target_path = Path("content") / args.to_lang / "blog" / f"{args.slug}.md"
     if target_path.exists():
         raise SystemExit(f"Target already exists: {target_path}")
 
