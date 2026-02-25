@@ -1,6 +1,6 @@
 ---
 title: 'L'era del programari personal'
-date: 2026-02-25 00:00
+date: 2026-01-25 00:00
 published: false
 description: 'Els agents de codi ens han arrossegat de cop a una nova era on el programari és tant barat que tothom el tindrà personalitzat.'
 tags: [AI, agents, programari]
