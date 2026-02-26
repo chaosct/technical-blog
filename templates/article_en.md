@@ -1,7 +1,7 @@
 ---
 title: '{{TITLE}}'
 date: {{DATE: null}: null}
-published: false
+status: draft
 description: '{{DESCRIPTION}}'
 tags: [python, tooling, devto]
 ---

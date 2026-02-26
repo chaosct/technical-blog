@@ -1,7 +1,7 @@
 ---
 title: Welcome
 date: 2026-01-09 16:57
-published: false
+status: published
 description: Blog kickoff.
 summary: I want to explain interesting things and I've decided a blog is the best format for it. Here you'll find deep, technical content, written in Catalan and in English, that I'll also replicate to other platforms.
 tags: [meta, writing, devto]

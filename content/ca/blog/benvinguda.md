@@ -1,7 +1,7 @@
 ---
 title: Benvinguda
 date: 2026-01-09 16:57
-published: false
+status: published
 description: Arrencada del blog.
 summary: Tinc ganes d'explicar coses interessants i he decidit que un blog és el millor format per fer-ho. Aquí hi trobareu contingut tècnic i profund, en català, que aniré replicant a altres plataformes.
 tags: [meta, escriptura, devto]
