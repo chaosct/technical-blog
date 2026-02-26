@@ -22,6 +22,8 @@ uv run scripts/new_article.py --lang ca --slug el-meu-article --title "El meu ar
 
 2. Escriure l'article a `content/ca/el-meu-article.md`.
 
+1. Per a publicar al blog, cal eliminar el camp status o passar-lo a published
+
 1. Generar la versio anglesa (manual + assistent):
 
 ```
@@ -30,7 +32,7 @@ uv run scripts/prepare_translation.py --slug el-meu-article
 
 Segueix `TRANSLATION.md` per fer la traduccio amb un agent.
 
-4. Exportar per a dev.to:
+5. Exportar per a dev.to:
 
 ```
 uv run scripts/export_devto.py
