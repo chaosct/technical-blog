@@ -34,6 +34,7 @@ AUTHOR_FEED_RSS = None
 
 # Theme
 THEME = "notmyidea"
+THEME_TEMPLATES_OVERRIDES = ["theme_overrides"]
 
 # Static paths
 STATIC_PATHS = ["images", "extra/favicon.ico"]

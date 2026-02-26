@@ -3,6 +3,7 @@ title: 'L'era del programari personal'
 date: 2026-01-25 00:00
 published: false
 description: 'Els agents de codi ens han arrossegat de cop a una nova era on el programari és tant barat que tothom el tindrà personalitzat.'
+summary: "Els agents de codi han canviat l'economia del programari: crear eines ad-hoc, personalitzar projectes open source o automatitzar tasques que abans no valien la pena ja és trivial. En aquest article repasso diversos exemples pràctics d'eines que he creat o modificat amb agents, des d'automatitzacions d'onboarding fins a personalitzar programari en Rust sense saber-ne."
 tags: [AI, agents, programari]
 ---
 
