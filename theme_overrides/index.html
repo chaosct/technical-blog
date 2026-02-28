@@ -12,9 +12,24 @@
                     </header>
 
                     <div class="entry-content">
-                        {% include 'article_infos.html' %}
+                        <p class="post-meta" style="margin: 0 0 0.75em 0;">
+                            <abbr class="published" title="{{ article.date.isoformat() }}">
+                                {{ article.locale_date }}
+                            </abbr>
+                        </p>
+
                         {{ article.summary }}
-                        <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">read more</a>
+
+                        <div class="post-meta-bottom" style="display: flex; justify-content: space-between; align-items: baseline; gap: 1em; margin-top: 0.75em;">
+                            <span class="post-tags">
+                                {% if article.tags %}
+                                    {% for tag in article.tags %}
+                                        <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+                                    {% endfor %}
+                                {% endif %}
+                            </span>
+                            <a class="readmore" style="float: none" href="{{ SITEURL }}/{{ article.url }}">read more</a>
+                        </div>
                     </div>
                 </article></li>
             {% endfor %}
