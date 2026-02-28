@@ -12,11 +12,19 @@
                     </header>
 
                     <div class="entry-content">
-                        <p class="post-meta" style="margin: 0 0 0.75em 0;">
+                        <div class="post-meta" style="display: flex; justify-content: space-between; align-items: baseline; gap: 1em; margin: 0 0 0.75em 0;">
                             <abbr class="published" title="{{ article.date.isoformat() }}">
                                 {{ article.locale_date }}
                             </abbr>
-                        </p>
+
+                            <span class="post-translations" style="font-size: 0.9em; opacity: 0.75;">
+                                {% if article.translations %}
+                                    {% for translation in article.translations %}
+                                        <a href="{{ SITEURL }}/{{ translation.url }}" hreflang="{{ translation.lang }}">{{ translation.lang }}</a>{% if not loop.last %} {% endif %}
+                                    {% endfor %}
+                                {% endif %}
+                            </span>
+                        </div>
 
                         {{ article.summary }}
 
