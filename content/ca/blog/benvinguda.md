@@ -7,8 +7,6 @@ summary: Tinc ganes d'explicar coses interessants i he decidit que un blog és e
 tags: [meta, escriptura, devto]
 ---
 
-# Benvinguda
-
 A vegades tinc ganes d'explicar coses, coses interessants, però mai trobo el temps ni sé on posar-les perquè arribi a algú.
 
 Després de llegir Hacker News de forma regular durant mesos, em queda clara la superioritat dels blogs per a explicar el tipus de coses que vull explicar. Així que muntaré aquest blog com a nucli i replicaré

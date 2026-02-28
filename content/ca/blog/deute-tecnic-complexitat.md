@@ -7,8 +7,6 @@ summary: La metàfora del deute tècnic porta associat un estigma de mala gesti�
 tags: [python, tooling, devto]
 ---
 
-# Parlem de complexitat, no de deute tècnic
-
 Fa un any, estàvem fent un retir estratègic a l'empresa, i m'havia posat com a objectiu, garantir que tindriem temps i dedicació per a millorar el nostre codi. El que se'n diu pagar deute tècnic.
 
 Tradicionalment, en la meva experiència i pel que llegeixo en la de molta gent, el deute tècnic és molt difícil de gestionar:

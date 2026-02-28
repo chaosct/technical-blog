@@ -7,8 +7,6 @@ summary: "Els agents de codi han canviat l'economia del programari: crear eines 
 tags: [AI, agents, programari]
 ---
 
-# L'era del programari personal
-
 Portem una progressió d'eines molt interessant l'últim any. Primer, amb agents de langchain s'intentava el que claude code va ser el primer a aconseguir: la combinació de tools amb LLMs, amb un loop d'acció i test. Aquest 2026 tot s'està accelerant amb Ralph loops i clawdbot.
 
 El programari s'està abaratint a xarxes forçaces i, tot i les seves limitacions, hi ha molts casos d'ús on de cop l'economia de la progamació ha quedat trastocada.
