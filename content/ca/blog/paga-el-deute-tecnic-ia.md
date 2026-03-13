@@ -1,9 +1,9 @@
 ---
-title: 'Paga el deute tècnic amb IA'
+title: Paga el deute tècnic amb IA
 date: 2026-03-13 15:55
 status: published
-description: 'Usa l'augment de productivitat de la IA per a pagar deute tècnic.'
-summary: "El deute tècnic és allò que sabem que hem de canviar però que l'usuari no veu. En aquest article explico com, gràcies als agents de codi, vaig poder portar el nostre programari més antic —Mapping Tool— de Mac Intel a Apple Silicon, modernitzant dependències de fa més de 10 anys amb Codex i Claude, i sense comprometre el roadmap de l'empresa."
+description: Usa l'augment de productivitat de la IA per a pagar deute tècnic.
+summary: El deute tècnic és allò que sabem que hem de canviar però que l'usuari no veu. En aquest article explico com, gràcies als agents de codi, vaig poder portar el nostre programari més antic —Mapping Tool— de Mac Intel a Apple Silicon, modernitzant dependències de fa més de 10 anys amb Codex i Claude, i sense comprometre el roadmap de l'empresa.
 tags: [AI, agents, deute tècnic, C++]
 ---
 
@@ -49,7 +49,7 @@ Finalment, després de modernitzar totes les llibreries de base, sóc capaç d'i
 
 ## El que vaig fer era gairebé un Ralph Loop
 
-Si heu estat atents a l'actualitat de IA, un ralph loop justament fa això, però d'una forma una mica més autònoma. No és sorprenent que tothom vagi arribant a les mateixes conclusions sobre com operar amb agents de codi de forma efectiva: és molt important donar a l'agent de codi una forma de comprovar els resultats, de compilar i veure els errors. Així pot iterar sol molt millor i durant més temps.
+Si heu estat atents a l'actualitat de IA, un [ralph loop](https://ghuntley.com/ralph/) justament fa això, però d'una forma una mica més autònoma. No és sorprenent que tothom vagi arribant a les mateixes conclusions sobre com operar amb agents de codi de forma efectiva: és molt important donar a l'agent de codi una forma de comprovar els resultats, de compilar i veure els errors. Així pot iterar sol molt millor i durant més temps.
 
 Inicialment passava els errors manualment des del log del CI a Codex, però més tard vaig donar-li un script per a baixar-se tot el resultat de la compilació i trobar els logs del que havia fallat. Això va millorar bastant l'ergonomia.
 
