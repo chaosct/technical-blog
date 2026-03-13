@@ -11,7 +11,7 @@ Ja comentava a l'[article anterior](era-pogramari-personal.md) que l'economia de
 
 Definim el deute tècnic com tot allò que sabem que hem de canviar, que ens fa anar més lents, que augmenta la complexitat; però que l'usuari no veu, i per tant és difícil de justificar el temps que cal invertir-hi.
 
-No em centraré en el deute tècnic avui (ja tinc un article a mitges sobre això). El que vull és parlar de com els agents de codi ens poden ajudar a pagar-lo, amb un exemple pràctic: portar el nostre programari més antic —Mapping Tool— de Mac Intel a Apple Silicon.
+No em centraré en el deute tècnic avui (ja tinc un article a mitges sobre això). El que vull és parlar de com els agents de codi ens poden ajudar a pagar-lo, amb un exemple pràctic: portar el nostre programari més antic —[Mapping Tool](https://www.protopixel.io/product/mapping-tool)— de Mac Intel a Apple Silicon.
 
 ## El deute que vaig contraure
 
