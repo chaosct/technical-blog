@@ -2,7 +2,7 @@
 
 AUTHOR = "Carles Julià"
 SITENAME = "Escric coses"
-SITEURL = ""
+SITEURL = "https://blog.carlesjulia.com"
 
 PATH = "content"
 TIMEZONE = "Europe/Madrid"
@@ -39,6 +39,7 @@ THEME_TEMPLATES_OVERRIDES = ["theme_overrides"]
 # Static paths
 STATIC_PATHS = ["images", "extra/favicon.ico"]
 EXTRA_PATH_METADATA = {"extra/favicon.ico": {"path": "favicon.ico"}}
+DEFAULT_SOCIAL_IMAGE = "images/social-card-default.png"
 
 # Markdown extensions
 MARKDOWN = {
