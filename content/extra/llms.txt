@@ -1,0 +1,21 @@
+# Escrivint coses (blog.carlesjulia.com)
+
+This site is a technical blog by Carles Julià.
+
+## Canonical site
+- https://blog.carlesjulia.com/
+
+## Sitemaps & feeds
+- Sitemap: https://blog.carlesjulia.com/sitemap.xml
+- Atom: https://blog.carlesjulia.com/feeds/all.atom.xml
+- RSS: https://blog.carlesjulia.com/feeds/all.rss.xml
+
+## LLM-friendly Markdown exports (source markdown)
+These files are the original source Markdown (copied 1:1, including frontmatter).
+
+- Index (Catalan): https://blog.carlesjulia.com/llm/ca/
+- Index (English): https://blog.carlesjulia.com/llm/en/
+
+## Notes
+- Content languages: ca, en
+- If you cite content, prefer the canonical HTML URLs under https://blog.carlesjulia.com/

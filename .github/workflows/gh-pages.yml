@@ -24,7 +24,9 @@ jobs:
       - name: Install dependencies
         run: uv sync
       - name: Build site
-        run: uv run pelican content -o output -s pelicanconf.py
+        run: |
+          uv run pelican content -o output -s pelicanconf.py
+          uv run python scripts/export_llm_md.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: output
