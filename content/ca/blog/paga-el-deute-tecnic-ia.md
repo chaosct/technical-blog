@@ -4,7 +4,7 @@ date: 2026-03-13 15:55
 status: published
 description: Usa l'augment de productivitat de la IA per a pagar deute tècnic.
 summary: El deute tècnic és allò que sabem que hem de canviar però que l'usuari no veu. En aquest article explico com, gràcies als agents de codi, vaig poder portar el nostre programari més antic —Mapping Tool— de Mac Intel a Apple Silicon, modernitzant dependències de fa més de 10 anys amb Codex i Claude, i sense comprometre el roadmap de l'empresa.
-tags: [AI, agents, deute tècnic, C++]
+tags: AI, agents, deute tècnic, C++
 ---
 
 Ja comentava a l'[article anterior](era-pogramari-personal.md) que l'economia de la programació ha canviat radicalment amb els agents de codi. I això també ha afectat el deute tècnic.

@@ -4,7 +4,7 @@ date: 2026-01-25 00:00
 status: published
 description: Els agents de codi ens han arrossegat de cop a una nova era on el programari és tant barat que tothom el tindrà personalitzat.
 summary: "Els agents de codi han canviat l'economia del programari: crear eines ad-hoc, personalitzar projectes open source o automatitzar tasques que abans no valien la pena ja és trivial. En aquest article repasso diversos exemples pràctics d'eines que he creat o modificat amb agents, des d'automatitzacions d'onboarding fins a personalitzar programari en Rust sense saber-ne."
-tags: [AI, agents, programari]
+tags: AI, agents, programari
 ---
 
 Portem una progressió d'eines molt interessant l'últim any. Primer, amb agents de langchain s'intentava el que claude code va ser el primer a aconseguir: la combinació de tools amb LLMs, amb un loop d'acció i test. Aquest 2026 tot s'està accelerant amb Ralph loops i clawdbot.

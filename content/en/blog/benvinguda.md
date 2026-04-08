@@ -4,7 +4,7 @@ date: 2026-01-09 16:57
 status: published
 description: Blog kickoff.
 summary: I want to explain interesting things and I've decided a blog is the best format for it. Here you'll find deep, technical content, written in Catalan and in English, that I'll also replicate to other platforms.
-tags: [meta, writing, devto]
+tags: meta, writing, devto
 ---
 
 Sometimes I feel like explaining things, interesting things, but I never find the time or know where to put them so they reach someone.

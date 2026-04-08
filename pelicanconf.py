@@ -2,6 +2,7 @@
 
 AUTHOR = "Carles Julià"
 SITENAME = "Escric coses"
+SITESUBTITLE = "Bloc tècnic de Carles Julià"
 SITEURL = "https://blog.carlesjulia.com"
 
 PATH = "content"

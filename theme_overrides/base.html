@@ -7,6 +7,18 @@
                         <meta name="generator" content="Pelican" />
                         {% set page_title = self.title() | striptags if self.title() else SITENAME|striptags %}
                         {% set page_description = SITESUBTITLE|default(SITENAME)|striptags %}
+                        {% set page_url = SITEURL ~ '/' %}
+                        {% if page is defined %}
+                                {% set page_url = SITEURL ~ '/' ~ page.url %}
+                        {% elif category is defined %}
+                                {% set page_url = SITEURL ~ '/' ~ category.url %}
+                        {% elif tag is defined %}
+                                {% set page_url = SITEURL ~ '/' ~ tag.url %}
+                        {% elif author is defined %}
+                                {% set page_url = SITEURL ~ '/' ~ author.url %}
+                        {% elif page_name is defined and page_name != 'index' %}
+                                {% set page_url = SITEURL ~ '/' ~ page_name ~ '.html' %}
+                        {% endif %}
                         {% set social_image = DEFAULT_SOCIAL_IMAGE %}
                         {% if social_image %}
                                 {% if '://' in social_image %}
@@ -24,7 +36,7 @@
                         <meta property="og:title" content="{{ page_title }}" />
                         <meta property="og:description" content="{{ page_description }}" />
                         <meta property="og:type" content="website" />
-                        <meta property="og:url" content="{{ SITEURL }}/" />
+                        <meta property="og:url" content="{{ page_url }}" />
                         {% if social_image_url %}
                         <meta property="og:image" content="{{ social_image_url }}" />
                         <meta name="twitter:image" content="{{ social_image_url }}" />
@@ -46,7 +58,7 @@
         <body id="index" class="home">
                 {% include 'github.html' %}
                 <header id="banner" class="body">
-                        <h1><a href="{{ SITEURL }}/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+                        <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
                         <nav><ul>
                                 {% for title, link in MENUITEMS %}
                                         <li><a href="{{ link }}">{{ title }}</a></li>

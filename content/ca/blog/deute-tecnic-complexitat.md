@@ -4,7 +4,7 @@ date: 2026-02-25 00:00
 status: draft
 description: Parlar de complexitat ens ajuda a pensar millor que usar la metàfora del deute tècnic
 summary: La metàfora del deute tècnic porta associat un estigma de mala gestió que dificulta la comunicació amb equips no tècnics. Pensar en termes de complexitat — quelcom inevitable que s'acumula per causes sovint externes — ens permet raonar millor sobre el problema i justificar el temps necessari per abordar-lo.
-tags: [python, tooling, devto]
+tags: python, tooling, devto
 ---
 
 Fa un any, estàvem fent un retir estratègic a l'empresa, i m'havia posat com a objectiu, garantir que tindriem temps i dedicació per a millorar el nostre codi. El que se'n diu pagar deute tècnic.

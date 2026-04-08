@@ -4,7 +4,7 @@ date: 2026-01-25 00:00
 status: published
 description: Code agents have suddenly pushed us into a new era where software is so cheap that everyone can have it tailored to their needs.
 summary: 'Code agents have changed the economics of software: creating ad-hoc tools, customizing open source projects, or automating tasks that previously were not worth it is now trivial. In this article I go over several practical examples of tools I have created or modified with agents, from onboarding automations to customizing Rust software in a language I barely know.'
-tags: [AI, agents, software]
+tags: AI, agents, software
 ---
 
 Over the last year, these tools have evolved at a remarkable pace. Early LangChain agents were exploring the same idea, but Claude Code was the first tool that really made it work: combining tools with LLMs in an action-and-test loop. In 2026, all of this is accelerating with Ralph loops and clawdbot.

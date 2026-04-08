@@ -4,7 +4,7 @@ date: 2026-01-09 16:57
 status: published
 description: Arrencada del blog.
 summary: Tinc ganes d'explicar coses interessants i he decidit que un blog és el millor format per fer-ho. Aquí hi trobareu contingut tècnic i profund, en català, que aniré replicant a altres plataformes.
-tags: [meta, escriptura, devto]
+tags: meta, escriptura, devto
 ---
 
 A vegades tinc ganes d'explicar coses, coses interessants, però mai trobo el temps ni sé on posar-les perquè arribi a algú.
