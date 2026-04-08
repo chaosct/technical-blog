@@ -1,5 +1,12 @@
 #!/usr/bin/env python
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from template_filters import format_blog_date
+
 AUTHOR = "Carles Julià"
 SITENAME = "Escric coses"
 SITESUBTITLE = "Bloc tècnic de Carles Julià"
@@ -88,3 +95,4 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 10
 LINKS = ()
+JINJA_FILTERS = {"format_blog_date": format_blog_date}

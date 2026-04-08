@@ -14,7 +14,7 @@
                     <div class="entry-content">
                         <div class="post-meta" style="display: flex; justify-content: space-between; align-items: baseline; gap: 1em; margin: 0 0 0.75em 0;">
                             <abbr class="published" title="{{ article.date.isoformat() }}">
-                                {{ article.locale_date }}
+                                {{ article.date | format_blog_date(article.lang) }}
                             </abbr>
 
                             <span class="post-translations" style="font-size: 0.9em; opacity: 0.75;">
