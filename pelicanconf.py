@@ -10,7 +10,8 @@ from template_filters import format_blog_date
 AUTHOR = "Carles Julià"
 SITENAME = "Escric coses"
 SITESUBTITLE = "Bloc tècnic de Carles Julià"
-SITEURL = "https://blog.carlesjulia.com"
+SITEURL = ""
+RELATIVE_URLS = True
 
 PATH = "content"
 TIMEZONE = "Europe/Madrid"
@@ -80,6 +81,7 @@ MARKDOWN = {
         "markdown.extensions.codehilite": {"css_class": "highlight"},
         "markdown.extensions.extra": {},
         "markdown_extensions.internal_links": {},
+        "markdown_extensions.youtube_embed": {},
         "markdown.extensions.meta": {},
         "markdown.extensions.toc": {},
     },

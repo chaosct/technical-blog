@@ -68,6 +68,12 @@ Per servir-lo localment:
 uv run pelican --listen
 ```
 
+Per construir la versió de producció amb URLs absolutes:
+
+```
+uv run pelican content -s publishconf.py
+```
+
 ## Nox
 
 ```

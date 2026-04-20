@@ -114,7 +114,7 @@ Una possible forma és aquesta: divideix el que fas en dues o més parts indepen
 
 - **reduir complexitat!**
 
-Al final l'única sortida és **simplificar**. Això ho podem fer de vàries formes:
+Al final, l'única sortida és **simplificar**. Això ho podem fer de vàries formes:
 
 - usant menys eines, més simples i més estàndards.
 - fent refactors de codi que eliminin excepcions i simplifiquin codi.
