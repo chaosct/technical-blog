@@ -1,7 +1,7 @@
 ---
 title: Parlem de complexitat, no de deute tècnic
-date: 2026-02-25 00:00
-status: draft
+date: 2026-04-21 00:00
+status: published
 description: Parlar de complexitat ens ajuda a pensar millor que usar la metàfora del deute tècnic
 summary: La metàfora del deute tècnic porta associat un estigma de mala gestió que dificulta la comunicació amb equips no tècnics. Pensar en termes de complexitat — quelcom inevitable que s'acumula per causes sovint externes — ens permet raonar millor sobre el problema i justificar el temps necessari per abordar-lo.
 tags: python, tooling, enginyeria
@@ -126,7 +126,7 @@ Al final, amb l'explicació de la complexitat, vaig poder definir objectius de p
 
 Després prioritzàvem aquesta llista amb una taula [RICE](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/) i a cada Sprint proposàvem d'atacar algun ítem de la llista de les primeres posicions. Una de les coses més grans que vam fer va ser fer la transició de [Bazel](https://bazel.build/) a un monorepo organitzat amb [uv](https://docs.astral.sh/uv/) i [pnpm](https://pnpm.io/), ja que, al final, tenir shell scripts coordinant les eines de build tenia menys complexitat que **entendre** Bazel i mantenir-lo...
 
-Finalment, vam poder recuiperar les regnes del projecte. Vam sortir de l'espiral en la que ens trobàvem.
+Finalment, vam poder recuperar les regnes del projecte. Vam sortir de l'espiral en la que ens trobàvem.
 
 ## Té sentit tot això en l'era de la IA?
 

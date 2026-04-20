@@ -74,6 +74,12 @@ Per construir la versió de producció amb URLs absolutes:
 uv run pelican content -s publishconf.py
 ```
 
+Per generar també els exports Markdown i els índexs per a LLMs:
+
+```bash
+uv run python scripts/export_llm_md.py
+```
+
 ## Nox
 
 ```

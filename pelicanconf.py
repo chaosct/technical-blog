@@ -63,15 +63,11 @@ STATIC_PATHS = [
     "extra/favicon.ico",
     "extra/robots.txt",
     "extra/llms.txt",
-    "extra/llm/ca/index.html",
-    "extra/llm/en/index.html",
 ]
 EXTRA_PATH_METADATA = {
     "extra/favicon.ico": {"path": "favicon.ico"},
     "extra/robots.txt": {"path": "robots.txt"},
     "extra/llms.txt": {"path": "llms.txt"},
-    "extra/llm/ca/index.html": {"path": "llm/ca/index.html"},
-    "extra/llm/en/index.html": {"path": "llm/en/index.html"},
 }
 DEFAULT_SOCIAL_IMAGE = "images/social-card-default.png"
 
