@@ -14,7 +14,7 @@ Tradicionalment, en la meva experiència, i pel que llegeixo en la de molta gent
 - És difícil d'identificar
 - És difícil de comptabilitzar
 - És difícil de comunicar
-- I per tat és difícil d'acomodar temps i esforç a reduir-lo.
+- I per tant és difícil d'acomodar temps i esforç a reduir-lo.
 
 Va coincidir que vaig llegir diversos articles (o veure vídeos - ja fa un any d'això) on parlaven d'un concepte diferent, la complexitat, que em va ajudar molt més a raonar sobre aquest tema i a comunicar-lo que no pas el concepte de deute tècnic.
 
@@ -48,7 +48,9 @@ Però tot això sembla simplement una llista d'excuses per no haver fet bé la f
 
 ## Pensar en termes de complexitat
 
-Deixem de classificar el codi en bo o dolent: no usem metàfores de deute. Hi ha codi, i en principi fa el que ha de fer. Volem que faci també alguna altra cosa? Afegim més codi. Segurament canviem una mica el codi existent per a acomodar el codi nou. Ostres!, abans aquesta abstracció pressuposava quelcom que ara ja no és cert: cal canviar tots els llocs on s'usava. Com ho testejo, això? Mirem com ho hem solucionat en altres tests... I aquest problema justament el podríem solucionar amb la nova versió de la llibreria, però, si l'actualitzo, trencaré alguna cosa?
+Deixem de classificar el codi en bo o dolent: no usem metàfores de deute. Hi ha codi, i en principi fa el que ha de fer.
+
+Volem que faci també alguna altra cosa? Afegim més codi. Segurament canviem una mica el codi existent per a acomodar el codi nou. Ostres!, abans aquesta abstracció pressuposava quelcom que ara ja no és cert: cal canviar tots els llocs on s'usava. Com ho testejo, això? Mirem com ho hem solucionat en altres tests... I aquest problema justament el podríem solucionar amb la nova versió de la llibreria, però, si l'actualitzo, trencaré alguna cosa?
 
 La complexitat ens fa anar més lents per què ens costa més raonar sobre els canvis que estem introduint. Si som capaços de mantenir-ho tot alhora en el nostre cap, podem prendre decisions molt més fàcilment, però si no podem, cada canvi es converteix en una exploració i redescobriment.
 
@@ -80,13 +82,19 @@ En canvi, hi ha complexitat que no correspon al problema en si: la **complexitat
 - la mescla de llenguatges de programació, frameworks, llibreries i versions
 - ...
 
+> Aquesta distinció entre complexitat essencial i accidental la va formular Fred Brooks al seu assaig clàssic [*No Silver Bullet*](https://en.wikipedia.org/wiki/No_Silver_Bullet) (1986), on argumentava que no hi ha cap avenç tecnològic capaç de reduir la complexitat essencial d'un problema.
+
 I és que amb un projecte d'una dècada de durada, es podia veure la història i l'acumulació de mil cosetes que ho feien tot molt complex.
 
 ## Per què acumulem complexitat
 
 Ningú té com a objectiu augmentar la complexitat accidental, és més, la complexitat, a l'hora d'introduir-la, mai sembla accidental. És quelcom que passa de forma orgànica: el cert és que en el moment d'afegir complexitat estem solucionant problemes reals que tenim al projecte, i per això no ens n'adonem.
 
-Tal com passava amb la dificultat d'avenç de l'equip, a escala individual tota persona **té un màxim nivell de complexitat que pot mantenir al seu cap**. Si la complexitat del projecte n'és inferior, té un espai de complexitat vacant. Aquesta complexitat vacant és la moneda corrent que usem per a crear features i afegir coses. Mentre hi hagi espai, l'anirem ocupant. **No és bo ni dolent, és la forma en què funciona**: Al principi, com més espai tinguem vacant de complexitat, més ràpid anirem afegint coses i fent canvis, i això és molt valuós. Però a mesura que anem omplint tot l'espai disponible, trobar racons costa molt més. Eventualment, quan la complexitat del projecte excedeix la capacitat de la persona, li és impossible de raonar amb claredat, i això fa que sigui quasi impossible avançar, amb perill d'acabar en un punt de no retorn, on no hi ha prou espai ni per a _desfragmentar_ la complexitat existent.
+Tal com passava amb la dificultat d'avenç de l'equip, a escala individual tota persona **té un màxim nivell de complexitat que pot mantenir al seu cap**. Si la complexitat del projecte n'és inferior, té un espai de complexitat vacant. Aquesta complexitat vacant és la moneda corrent que usem per a crear features i afegir coses.
+
+**No és bo ni dolent, és la forma en què funciona**: mentre hi hagi espai, l'anirem ocupant. Al principi, com més espai tinguem vacant de complexitat, més ràpid anirem afegint coses i fent canvis, i això és molt valuós. Però a mesura que anem omplint tot l'espai disponible, trobar racons costa molt més.
+
+Eventualment, quan la complexitat del projecte excedeix la capacitat de la persona, li és impossible de raonar amb claredat, i això fa que sigui quasi impossible avançar, amb perill d'acabar en un punt de no retorn, on no hi ha prou espai ni per a _desfragmentar_ la complexitat existent.
 
 ## Com ho podem solucionar?
 
@@ -102,9 +110,9 @@ Podria semblar bona idea, però és encara pitjor. Gent més capaç pot tenir un
 
 Una possible forma és aquesta: divideix el que fas en dues o més parts independents. Això ajudarà molt si ho pots fer, però si ho pots fer potser és una mala senyal: per què la teva organització està fent dues coses totalment diferents? Segur que no estan relacionades?
 
-Per cert, aquest mètode era popular durant l'auge dels microserveis. Solució que va néixer per a solucionar un altre problema - l'escalabilitat de serveis gegantins de núvol - que, a més, quasi ningú no tenia. Però cada part no és al final totalment independent de les altres, obligant-se a dissenyar, negociar, mantenir, comunicar i documentar tots els punts de contacte. Suposo que si tens un exèrcit d'enginyers a la teva disposició, pot ser una opció.
+> Aquest mètode era popular durant l'auge dels microserveis: solució que va néixer per a solucionar un altre problema —l'escalabilitat de serveis gegantins de núvol— que, a més, quasi ningú no tenia. Però cada part no és al final totalment independent de les altres, obligant-se a dissenyar, negociar, mantenir, comunicar i documentar tots els punts de contacte. Suposo que si tens un exèrcit d'enginyers a la teva disposició, pot ser una opció.
 
-- reduir complexitat!
+- **reduir complexitat!**
 
 Al final l'única sortida és **simplificar**. Això ho podem fer de vàries formes:
 
@@ -116,7 +124,9 @@ Al final l'única sortida és **simplificar**. Això ho podem fer de vàries for
 
 Al final, amb l'explicació de la complexitat, vaig poder definir objectius de producte de reducció complexitat, per garantir poder tenir temps per a treballar-hi. Cada setmana teníem una reunió on ens preguntàvem què era el que ens frenava, per què anàvem lents. I fèiem una llista de les coses que volíem canviar.
 
-Després classificàvem aquesta llista amb un RICE i a cada Sprint proposàvem d'atacar algun ítem de la llista de les primeres posicions. Una de les coses més grans que vam fer va ser fer la transició de [Bazel](https://bazel.build/) a un monorepo organitzat amb [uv](https://docs.astral.sh/uv/) i [pnpm](https://pnpm.io/), ja que, al final, tenir shell scripts coordinant les eines de build tenia menys complexitat que **entendre** Bazel i mantenir-lo...
+Després prioritzàvem aquesta llista amb una taula [RICE](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/) i a cada Sprint proposàvem d'atacar algun ítem de la llista de les primeres posicions. Una de les coses més grans que vam fer va ser fer la transició de [Bazel](https://bazel.build/) a un monorepo organitzat amb [uv](https://docs.astral.sh/uv/) i [pnpm](https://pnpm.io/), ja que, al final, tenir shell scripts coordinant les eines de build tenia menys complexitat que **entendre** Bazel i mantenir-lo...
+
+Finalment, vam poder recuiperar les regnes del projecte. Vam sortir de l'espiral en la que ens trobàvem.
 
 ## Té sentit tot això en l'era de la IA?
 
