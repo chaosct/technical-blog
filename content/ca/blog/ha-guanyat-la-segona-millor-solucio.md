@@ -1,7 +1,7 @@
 ---
 title: Ha guanyat la segona millor solució
 date: 2026-11-10 00:00
-status: draft
+status: published
 description: Una reflexió personal sobre com la intel·ligència artificial ha canviat la meva manera d'entendre la recerca, el programari i les solucions prou bones.
 summary: Durant la tesi veia el machine learning com una distracció de la recerca real, la segona millor solució. Ara començo a pensar que potser ha guanyat, i que ens toca aprendre a treballar-hi.
 tags: AI, machine learning, recerca, programari
